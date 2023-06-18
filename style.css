@@ -1,0 +1,272 @@
+#quiz {
+  position: relative;
+  width: 375px;
+  height: fit-content;
+
+  /* Light grey */
+
+  background: #eeeeee;
+  border-radius: 8px;
+
+  margin-bottom: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 66px;
+  gap: 8px;
+
+  /* position: absolute; */
+  width: 375px;
+  height: 60px;
+  left: 0px;
+  /* top: 0px; */
+
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.11);
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 9px;
+  width: 70px;
+  height: 19px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+img {
+  display: none;
+  width: 30px;
+  height: 30px;
+  background: url(image.png);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+span {
+  /* Webquity Web Accessibility */
+
+  width: 70px;
+  height: 19px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #024cab;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+#progress-bar {
+  /* position: absolute; */
+  width: 335px;
+  height: 12px;
+  left: 20px;
+  margin: 20px 0 20px 20px;
+  /* top: 82px; */
+
+  /* White */
+
+  background: #ffffff;
+  border-radius: 20px;
+}
+#progress {
+  /* Frame 23 */
+
+  /* position: absolute; */
+  width: 82px;
+  height: 12px;
+  left: 0px;
+  /* top: 0px; */
+
+  /* Blue */
+
+  background: #2664fe;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#assesment_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 18px 10px; */
+  gap: 32px;
+
+  /* position: absolute; */
+  width: 335px;
+  height: auto;
+  left: 20px;
+  /* top: 116px; */
+  margin: 0 0 20px 20px;
+  padding: 16px 0;
+
+  background: #ffffff;
+  border-radius: 8px;
+}
+#progress_no {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+
+  width: 68px;
+  height: 34px;
+
+  /* Blue */
+
+  background: #2664fe;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+#number {
+  width: 40px;
+  height: 18px;
+  text-align: center;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 125%;
+
+  color: #ffffff;
+}
+#question {
+  width: 315px;
+  height: 56px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 142%;
+  text-align: center;
+  /* Blue */
+
+  color: #2664fe;
+}
+#question:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+#option_container {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+
+  width: 315px;
+  height: fit-content;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+.option_box {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 37px 41px;
+  gap: 8px;
+
+  width: 315px;
+  height: 56px;
+
+  /* White */
+
+  background: #ffffff;
+  /* Light grey */
+
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  color: #3d3d3d;
+  cursor: pointer;
+}
+.option_box:hover {
+  background: #2664fe;
+  color: white;
+}
+.selected_option {
+  background-color: #2664fe;
+  color: white;
+}
+
+.opt_text {
+  width: 84px;
+  height: 20px;
+
+  font-family: "arial";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  /* identical to box height, or 20px */
+  white-space: nowrap;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+#next-btn {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 146px;
+  margin: 15px 0 15px 20px;
+  width: 335px;
+  background: #2664fe;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
